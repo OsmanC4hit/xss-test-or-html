@@ -1,0 +1,13 @@
+<?php
+// Parametreden dosya çekiyor
+if (isset($_GET['page'])) {
+    include($_GET['page']);
+}
+?>
+
+<html>
+<body>
+<h1>LFI Testi</h1>
+<p>Dosya çağırmak için URL'ye ?page=sayfa yazın</p>
+</body>
+</html>
