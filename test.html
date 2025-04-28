@@ -1,0 +1,15 @@
+<html>
+<body>
+<h1>HTML Injection Testi</h1>
+
+<script>
+    // URL parametresinden veri alıp direkt sayfaya yazıyor (tehlikeli!)
+    const params = new URLSearchParams(window.location.search);
+    const value = params.get('input');
+    if (value) {
+        document.write(value);
+    }
+</script>
+
+</body>
+</html>
